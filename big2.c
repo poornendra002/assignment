@@ -2,7 +2,7 @@
 biggest()
 {
     int num1, num2;
-    // Ask user to enter the two numbers
+    // Ask user to enter two largest numbers
     printf("Please Enter Two different values\n");
     // Read two numbers from the user
     scanf("%d %d", &num1, &num2);
