@@ -8,7 +8,7 @@ pipeline {
                  steps {
                   
                    sh '''
-                    cd /home/ubuntu/jenkins/workspace/assignpipeline
+                    cd /home/ubuntu/jenkins/workspace/pipelineassign 
                    make ABC.exe
                    '''
                    
