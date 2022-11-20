@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'node-java }
+  agent { label 'node-java' }
          stages {
            
            
@@ -7,7 +7,8 @@ pipeline {
                  agent { label 'poorna' }
                  steps {
                   
-                   sh ''' cd /var/lib/jenkins/workspace
+                   sh 
+                   ''' cd /var/lib/jenkins/workspace
                    make
                    '''
                    
