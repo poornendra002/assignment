@@ -8,7 +8,7 @@ pipeline {
                  steps {
                   
                    sh '''
-                    cd /var/lib/jenkins/workspace
+                    cd /home/ubuntu/jenkins/workspace
                    make
                    '''
                    
