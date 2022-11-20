@@ -8,7 +8,7 @@ pipeline {
                  steps {
                   
                    sh '''
-                    cd /home/ubuntu/jenkins/workspace
+                    cd /home/ubuntu/jenkins/workspace/assignpipeline
                    make
                    '''
                    
