@@ -1,0 +1,23 @@
+pipeline {
+agent { label 'node-java' }
+stages {
+
+stage ('build') {
+agent { label 'node-java' }
+steps {
+
+sh ''' cd /home/ubuntu/jenkins/workspace/javaproject1
+mvn clean install '''
+
+}
+}
+
+stage ('deploy') {
+agent { label 'poorna' }
+steps {
+echo " this is deploy stage "
+
+}
+}
+}
+}
