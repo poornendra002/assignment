@@ -1,0 +1,33 @@
+pipeline {
+ agent any
+ stages {
+ 
+ stage ( 'clone' )
+ agent { label 'poorna' }
+ steps { 
+ git branch: 'main', url: 'https://github.com/poornendra002/assignment.git'
+ 
+ }
+ }
+ stage ('build')
+ agent { label 'poorna' }
+ steps {
+ sh '''
+ cd /home/ubuntu/jenkins/workspace/gitclonepipeline
+ make '''
+ 
+ }
+ }
+ 
+ 
+ stage ('deploy') {
+ agent { label 'java-node' }
+ steps {
+ 
+ echo "this is deploy stage"
+ 
+ }
+ }
+ }
+ }
+ 
