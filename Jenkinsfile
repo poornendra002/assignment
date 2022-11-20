@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'node-java' }
+  agent none
          stages {
            
            
@@ -9,7 +9,7 @@ pipeline {
                   
                    sh '''
                     cd /home/ubuntu/jenkins/workspace/assignpipeline
-                   make
+                   make ABC.exe
                    '''
                    
                  }
